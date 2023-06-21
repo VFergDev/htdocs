@@ -1,0 +1,530 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url('../images/vertarias-bg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    /* padding: .5rem 1rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    color: #a5a4a4;
+    font-size: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header .logo-black {
+    position: relative;
+    color: #000;
+    font-size: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+ul.navbar  {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    background-color: rgba(168, 160, 160, 0.5);
+    border-radius: 3rem;
+}
+
+header .navbar li{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: .3s;
+    transition-property: background;  
+}
+
+header .navbar li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .navbar a:not(:last-child) {
+    margin-right: 4rem;
+}
+
+header .navbar a:hover{
+    color: #fff;
+    transition: .3s;
+}
+
+.content {
+    max-width: 650px;
+    margin: 1rem 2rem;
+}
+
+.content .info h2 {
+    color: #000000;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 1rem;
+}
+
+.content .info h2 span {
+    color: #a5a4a4;
+   
+}
+
+.content .info p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.description {
+    background-color: rgba(233, 72, 72, 0.5);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.description p{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+
+.content .info-btn {
+    color: #fff;
+    background: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .3s;
+    transition-property: background;
+}
+
+.content .info-btn:hover{
+    background: #c51515;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: left;
+    margin-left: 3rem;
+    margin-bottom: 30px;
+}
+
+.media-icons a{
+    position: relative;
+    color: #000;
+    font-size: 2rem; 
+    transition: .3s;
+    transition-property: transform;
+}
+
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+
+.media-icons a:hover{
+    color: #ffffff;
+    transform: scale(1.5);
+
+}
+
+.vert-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin-left: 2rem;
+}
+
+.vert-icons a{
+    position: relative;
+    color: #000;
+    font-size: 2rem; 
+    transition: .3s;
+    transition-property: transform;
+}
+
+.vert-icons a:not(:last-child){
+    margin: 1rem;
+}
+
+.vert-icons a:hover{
+    color: #ffffff;
+    transform: scale(1.5);
+
+}
+
+/* Media queries */
+
+/* Default styles for all screen sizes */
+/* ... */
+
+/* Media query for screens smaller than 768px (e.g., mobile devices) */
+/* Existing CSS rules */
+
+@media screen and (max-width: 767px) {
+    header {
+      padding-top: 1rem;
+      flex-direction: column;
+    }
+    
+    header .logo {
+      font-size: 3.5rem;
+      padding: 1rem;
+    }
+    
+    header .flex-section {
+        margin: 0;
+        padding: 0;
+    }
+
+    header .flex-section h2 {
+        margin-top: 0;
+      }
+    
+
+    ul.navbar{
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(233, 72, 72, 0.5);
+        padding-left: 5%;
+    }
+    
+    header .navbar li {
+        font-size: 1.5rem;
+      margin-bottom: .3rem;
+    }
+
+        h2 {
+        text-align: center;
+        font-size: .5rem;
+    }
+
+    .content .description p{
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 600;
+        line-height: 3rem;
+    }
+
+    .media-icons {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    
+    .media-icons a{
+        position: relative;
+        color: #fff;
+        font-size: 25px; 
+        transition: .3s;
+        transition-property: transform;
+    }
+
+    .vert-icons {
+        margin-left: 0;
+    }
+    
+    /* .media-icons a:not(:last-child){
+        margin-right: 60px;
+    } */
+    
+  }
+  
+
+/* Media query for screens between 768px and 1024px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu-icon {
+        display: none;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+
+    .content {
+        margin: 2rem;
+    }
+
+    .info h2 {
+        font-size: 4rem;
+        line-height: 55px;
+    }
+}
+
+/* Media query for screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1024px) {
+    .menu-icon {
+        display: none;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .content {
+        margin: 100px;
+    }
+
+    .info h2 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+}
+
+@media (orientation: portrait) {
+    section {
+        background: url('../images/vertarias-bg-portrait.png') no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+  }
+
+  /* booking.html css */
+
+.contact-form form {
+    margin-top: 20px;
+  }
+  
+  .contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ff4040;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+  
+  input[type="submit" i] {
+    appearance: auto;
+    user-select: none;
+    white-space-collapse: preserve;
+    text-wrap: nowrap;
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    padding: 2px 6px;
+    border-width: px;
+    border-style: outset;
+}
+
+
+  button[type="submit"] {
+    background-color: #c51515;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #c51515;
+  }
+  
+/* confirm-message css */
+  #thank-you {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+ }
+
+ /* join css */
+ .gradient {
+    min-height: 100vh;
+    background: linear-gradient(136deg, rgb(170, 170, 170) 0%, rgb(255,255,244) 100%);
+ }
+
+ .show-btn {
+    color: #333;
+    cursor: pointer;
+ }
+
+ label.menu-link{
+    padding: 0;
+    font-weight: 500;
+ }
+
+ .wrapper {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    padding: 2rem;
+    max-width: 25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    /* display: none; */
+    transition: all .3s ease;
+ }
+
+ #toggle{
+    display: none;
+ }
+
+#toggle:checked ~ .wrapper {
+    opacity: 0;
+    pointer-events: none;
+    top: 40%;
+}
+
+ .wrapper .cancel-btn {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+    cursor: pointer;
+    color: #333;
+ }
+
+ .wrapper .wrapper-icon {
+    height: 7rem;
+    width: 7rem;
+    background: linear-gradient(136deg, rgb(170, 170, 170) 0%, rgb(255,255,244) 100%);
+    line-height: 7rem;
+    border-radius: 50%;
+    font-size: 3.5rem;
+    color: #2b2a2a;
+    border: linear-gradient(46deg, rgb(170, 170, 170) 0%, rgb(255,255,244) 100%); 5px solid;
+ }
+
+ .wrapper .content-subscribe{
+    margin: 1rem 0;
+ }
+
+ .content-subscribe .header-subscribe {
+    font-size: 2rem;
+    font-weight: 600;
+ }
+
+ .content-subscribe p{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: -3px;
+ }
+
+ form {
+    width: 98%;
+ }
+
+form .field {
+    height: 2.5rem;
+    width: 100%;
+    margin-bottom: .8rem;
+}
+
+form .field input{
+    height: 100%;
+    width: 100%;
+    border-radius: .4rem;
+    border: 1px solid #ccc;
+    padding: 0 1rem;
+    outline: none;
+    font-size: 1rem;
+    transition: all .3s ease;
+}
+
+form .field input:focus {
+    border: #333 .2rem solid;
+}
+
+form .btn {
+    height: 3rem;
+}
+
+form .btn input{
+    background: ;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0;
+    cursor: pointer;
+}
+
+.wrapper .text{
+    margin-top: .4rem;
+}
